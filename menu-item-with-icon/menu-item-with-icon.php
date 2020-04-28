@@ -28,7 +28,6 @@ function my_wp_nav_menu_objects($items, $args)
 
     // append icon
     if ($icon) {
-      write_log($item->title);
       ob_start(); ?>
       <div class="menu-item-with-icon">
         <div class="icon"><?php echo $icon ?></div>
