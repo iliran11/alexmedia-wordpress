@@ -10,13 +10,13 @@ add_filter('script_loader_tag', function ($tag, $handle) {
 }, 10, 2);
 
 add_action('wp_enqueue_scripts', function () {
-  $asset_manifest = json_decode(file_get_contents(ERW_ASSET_MANIFEST), true)['files'];
+  $asset_manifest = json_decode(file_get_contents(ACF_ASSET_MANIFEST), true)['files'];
 
   if (isset($asset_manifest['main.css'])) {
     wp_enqueue_style('erw', get_site_url() . $asset_manifest['main.css']);
   }
 
-  wp_enqueue_script('erw-runtime', get_site_url() . $asset_manifest['runtime~main.js'], array(), null, true);
+  wp_enqueue_script('erw-runtime', get_site_url() . $asset_manifest['runtime-main.js'], array(), null, true);
 
   wp_enqueue_script('erw-main', get_site_url() . $asset_manifest['main.js'], array('erw-runtime'), null, true);
 
