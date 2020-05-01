@@ -5,7 +5,6 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 const target = document.getElementById("alexmedia-contact-form");
-console.log("my siteeeee", target);
 if (target) {
   ReactDOM.render(
     <React.StrictMode>
