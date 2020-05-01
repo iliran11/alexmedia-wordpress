@@ -1,3 +1,0 @@
-const ContactInfo = () => {
-  <div> cont
-}

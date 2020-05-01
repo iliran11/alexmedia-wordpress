@@ -1,0 +1,120 @@
+/*
+Theme Name: alexmedia-selfer
+Theme URI: http://alexmedia.co.il
+description: >-
+  Selfer Child Theme
+Author: Liran Cohen
+Author URI: http://ynet.co.il
+Template: selfer
+Version: 2.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain: alexmedia-selfer
+*/
+
+html {
+  direction: rtl;
+}
+html .ts-bubble-border .ts-title-rotate {
+  left: auto;
+  right: 0;
+}
+.site-logo {
+  left: 0px;
+  margin-left: 1rem;
+  margin-right: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  #menu-main-menu {
+    display: flex;
+    /* 	flex-direction: row-reverse; */
+  }
+}
+
+.mainmenu .sub-menu li a,
+.mainmenu .children li a {
+  font-family: Open Sans;
+}
+html body {
+  text-align: right;
+}
+@media only screen and (min-width: 768px) {
+  .mainmenu .sub-menu li a,
+  .mainmenu .children li a {
+    text-align: right !important;
+  }
+}
+.mainmenu .sub-menu li a,
+.mainmenu .children li a {
+  font-family: Rubik;
+}
+
+.service-page-hero-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.advantage-column-wrapper {
+  width: auto !importat;
+}
+.home .selfer-about-me-content dd {
+  margin: 0 1.5em 1.5em;
+  margin-right: 0px;
+}
+
+@media only screen and (min-width: 767px) {
+  .home .odometer-inside {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .home .counter-loop {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+}
+
+.blog-sidebar-content .widget-title:before {
+  right: 0;
+  left: auto;
+}
+.blog-sidebar-content .widget-title:after {
+  right: 0;
+  left: auto;
+}
+
+.ts-background-image {
+background-size:contain !important;
+	background-position:center !important;
+}
+
+.testimonal-image {
+	background-size:contain;
+}
+.offset-md-2 {
+	    margin-right: 16.666667% !important;
+
+}
+.owl-stage-outer {
+	direction: ltr;
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+	display: block !important;
+}
+
+#contact-us-cover h3 {
+	text-align:center;
+	font-size: 50px;
+	font-weight:bold;
+}
+#contact-us-cover span:first-child {
+	color:var(--dark);
+}
+#contact-us-cover span:nth-child(2) {
+	color:var(--yellow);;
+}
+.author-name-info {
+  /* color: red !important; */
+}
