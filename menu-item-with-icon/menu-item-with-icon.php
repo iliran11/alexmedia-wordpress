@@ -18,7 +18,12 @@ function wpdocs_register_plugin_styles()
 // Register style sheet.
 
 function my_wp_nav_menu_objects($items, $args)
+
 {
+  // get if we are on the homepage
+  // global $wp;
+  // write_log('my url is: ');
+  // write_log(add_query_arg($wp->query_vars, home_url($wp->request)));
 
   // loop
   foreach ($items as &$item) {
@@ -41,5 +46,11 @@ function my_wp_nav_menu_objects($items, $args)
   // return
   return $items;
 }
+// function my_wp_nav_menu_items($items)
+// {
+//   global $wp;
+//   write_log(home_url($wp->request));
+// }
 add_action('wp_enqueue_scripts', 'wpdocs_register_plugin_styles');
 add_filter('wp_nav_menu_objects', 'my_wp_nav_menu_objects', 10, 2);
+// add_filter('wp_nav_menu_items', 'my_wp_nav_menu_items', 10, 4);
