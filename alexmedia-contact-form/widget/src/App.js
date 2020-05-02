@@ -1,9 +1,15 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import ContactForm from "./components/form";
+import ContactInfo from "./components/contact-info";
 
 function App() {
-  return <div className="App">liran</div>;
+  return (
+    <div className="App">
+      <ContactForm />
+      <ContactInfo />
+    </div>
+  );
 }
 
 export default App;

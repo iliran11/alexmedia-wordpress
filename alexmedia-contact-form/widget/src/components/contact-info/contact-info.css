@@ -1,0 +1,39 @@
+.contact-info {
+  flex: auto;
+  position: relative;
+  color: white;
+}
+.contact-info img {
+  position: absolute;
+  width: 100%;
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+.info {
+  position: relative;
+  z-index: 100;
+  margin-right: 25%;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+.contact-item:last-child {
+  margin-bottom: 0px;
+}
+.contact-item svg {
+  height: 100%;
+  width: 100%;
+  fill: yellowgreen;
+}
+.contact-item-icon {
+  height: 35px;
+  width: 35px;
+  margin-left: 20px;
+}
