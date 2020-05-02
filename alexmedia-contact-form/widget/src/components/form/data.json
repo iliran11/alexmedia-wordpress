@@ -1,0 +1,10 @@
+{
+  "title": "לפרטים צרו קשר ונשמח לעמוד לשירותכם:",
+  "inputs": [
+    { "type": "text", "name": "name", "placeholder": "שם:" },
+    { "type": "numbers", "name": "phone", "placeholder": "טלפון:" },
+    { "type": "text", "name": "mail", "placeholder": "דואל:" },
+    { "type": "text", "name": "websiteUrl", "placeholder": "כתובת אתר:" },
+    { "type": "text", "name": "details", "placeholder": "הערות:" }
+  ]
+}

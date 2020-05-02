@@ -8,3 +8,9 @@ html {
 ul {
   padding: 0px;
 }
+
+:root {
+  --theme: #dd6b49;
+  --theme-hover: green;
+  --theme-black: black;
+}

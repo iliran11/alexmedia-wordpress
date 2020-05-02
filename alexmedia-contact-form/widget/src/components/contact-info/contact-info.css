@@ -2,6 +2,7 @@
   flex: auto;
   position: relative;
   color: white;
+  width: 50%;
 }
 .contact-info img {
   position: absolute;
@@ -30,7 +31,7 @@
 .contact-item svg {
   height: 100%;
   width: 100%;
-  fill: yellowgreen;
+  fill: var(--theme);
 }
 .contact-item-icon {
   height: 35px;
