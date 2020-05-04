@@ -11,9 +11,14 @@ const ContactInfo = () => {
       <div className="info">
         <h2 className="title">{title}</h2>
         <ul>
-          {Object.entries(items).map((entry) => {
-            const [key, value] = entry;
-            return <ContactItem content={value} type={key} key={key} />;
+          {items.map((item) => {
+            return (
+              <ContactItem
+                content={item.label}
+                type={item.type}
+                key={item.type}
+              />
+            );
           })}
         </ul>
       </div>
