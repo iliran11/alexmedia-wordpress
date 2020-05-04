@@ -1,13 +1,13 @@
 import React from "react";
 import "./contact-info.css";
 import ContactItem from "./components/ContactItem";
-import contactDetails from "./contactDetails.json";
+import data from "./data.json";
 
 const ContactInfo = () => {
-  const { title, background, items } = contactDetails;
+  const { title, background, items } = data;
   return (
     <div className="contact-info">
-      <img src={background} />
+      <img src={background} alt="" />
       <div className="info">
         <h2 className="title">{title}</h2>
         <ul>

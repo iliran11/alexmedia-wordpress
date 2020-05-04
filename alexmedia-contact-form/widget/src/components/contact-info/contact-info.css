@@ -1,12 +1,15 @@
 .contact-info {
+  display: none;
   flex: auto;
   position: relative;
   color: white;
   width: 50%;
+  overflow: hidden;
+  background-color: black;
 }
 .contact-info img {
+  display: none;
   position: absolute;
-  width: 100%;
 }
 .title {
   font-size: 30px;
@@ -17,7 +20,6 @@
 .info {
   position: relative;
   z-index: 100;
-  margin-right: 25%;
 }
 .contact-item {
   display: flex;
@@ -37,4 +39,24 @@
   height: 35px;
   width: 35px;
   margin-left: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-info {
+    display: block;
+  }
+  .info {
+    margin-right: 30px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .contact-info {
+    background-color: transparent;
+  }
+  .contact-info img {
+    display: block;
+  }
+  .info {
+    margin-right: 25%;
+  }
 }

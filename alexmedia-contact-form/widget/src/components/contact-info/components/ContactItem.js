@@ -1,5 +1,4 @@
 import React from "react";
-import mail from "../icons/call.svg";
 import getIcon from "../utils/getIcon";
 
 const ContactItem = (props) => {

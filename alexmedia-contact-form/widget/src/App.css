@@ -13,4 +13,6 @@ ul {
   --theme: #dd6b49;
   --theme-hover: green;
   --theme-black: black;
+  --tablet-breakpoint: 1025px;
+  --mobile-breakpoint: 768px;
 }
