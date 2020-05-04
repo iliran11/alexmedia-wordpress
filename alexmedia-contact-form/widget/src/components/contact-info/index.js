@@ -7,7 +7,7 @@ const ContactInfo = () => {
   const { title, background, items } = data;
   return (
     <div className="contact-info">
-      <img src={background} alt="" />
+      <img src={background} alt="" className="background-image" />
       <div className="info">
         <h2 className="title">{title}</h2>
         <ul>

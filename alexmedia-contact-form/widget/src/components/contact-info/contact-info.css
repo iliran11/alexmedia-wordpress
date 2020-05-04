@@ -7,7 +7,7 @@
   overflow: hidden;
   background-color: black;
 }
-.contact-info img {
+.contact-info .background-image {
   display: none;
   position: absolute;
 }
@@ -55,7 +55,7 @@
   .contact-info {
     background-color: transparent;
   }
-  .contact-info img {
+  .contact-info .background-image {
     display: block;
   }
   .info {
