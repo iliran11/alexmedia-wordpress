@@ -5,10 +5,12 @@ const ContactItem = (props) => {
   const Icon = getIcon(props.type);
   return (
     <li className="contact-item">
-      <div className="contact-item-icon">
-        <Icon />
-      </div>
-      <span>{props.content}</span>
+      <a href={props.linkProps.href}>
+        <div className="contact-item-icon">
+          <Icon />
+        </div>
+        <span>{props.label}</span>
+      </a>
     </li>
   );
 };

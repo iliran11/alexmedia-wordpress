@@ -22,10 +22,12 @@
   z-index: 100;
 }
 .contact-item {
-  display: flex;
-  align-items: center;
   font-size: 19px;
   margin-bottom: 15px;
+}
+.contact-item a {
+  display: flex;
+  align-items: center;
 }
 .contact-item:last-child {
   margin-bottom: 0px;
@@ -58,5 +60,8 @@
   }
   .info {
     margin-right: 25%;
+  }
+  .contact-item {
+    color: white;
   }
 }

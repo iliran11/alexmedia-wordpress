@@ -2,8 +2,24 @@
   "title": "פרטי התקשרות",
   "background": "https://www.extra.co.il/wp-content/themes/extra/images/Contactpng_02.png",
   "items": [
-    { "type": "facebook", "label": "Alex Social Media" },
-    { "type": "whatsapp", "label": "050-22229594" },
-    { "type": "mail", "label": "alex.media4u@gmail.com" }
+    {
+      "type": "facebook",
+      "label": "Alex Social Media",
+      "linkProps": { "href": "https://www.facebook.com/alexmedia4u" }
+    },
+    {
+      "type": "whatsapp",
+      "label": "050-22229594",
+      "linkProps": {
+        "href": "https://wa.me/972502229594"
+      }
+    },
+    {
+      "type": "mail",
+      "label": "alex.media4u@gmail.com",
+      "linkProps": {
+        "href": "mailto:alex.media4u@gmail.com"
+      }
+    }
   ]
 }
