@@ -2,10 +2,10 @@
   display: none;
   flex: auto;
   position: relative;
-  color: white;
+  color: black;
   width: 50%;
   overflow: hidden;
-  background-color: black;
+  background-color: white;
 }
 .contact-info .background-image {
   display: none;
@@ -35,7 +35,7 @@
 .contact-item svg {
   height: 100%;
   width: 100%;
-  fill: var(--theme);
+  fill: #dd6b49;
 }
 .contact-item-icon {
   height: 35px;
@@ -54,6 +54,7 @@
 @media only screen and (min-width: 1025px) {
   .contact-info {
     background-color: transparent;
+    color: white;
   }
   .contact-info .background-image {
     display: block;

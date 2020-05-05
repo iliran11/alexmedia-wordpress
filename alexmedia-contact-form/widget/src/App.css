@@ -1,6 +1,8 @@
+html {
+  background-color: black;
+}
 .App {
   display: flex;
-  background-color: white;
 }
 html {
   direction: rtl;
@@ -16,9 +18,9 @@ a {
 }
 
 :root {
-  --theme: #dd6b49;
-  --theme-hover: green;
-  --theme-black: black;
+  --theme: white;
+  --theme-hover: #02aedc;
+  --theme-black: #75d5f0;
   --tablet-breakpoint: 1025px;
   --mobile-breakpoint: 768px;
 }

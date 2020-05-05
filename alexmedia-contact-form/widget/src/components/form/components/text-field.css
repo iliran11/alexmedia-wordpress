@@ -1,6 +1,10 @@
 #alexmedia-contact-form .acf-text-field {
   margin-bottom: 15px;
 }
+
+#alexmedia-contact-form .acf-text-field input {
+  color: white;
+}
 #alexmedia-contact-form .acf-text-field:last-child {
   margin-bottom: 0px;
 }
@@ -11,6 +15,9 @@
 }
 #alexmedia-contact-form .acf-text-field .Mui-focused {
   right: 0px;
+  color: var(--theme-hover);
+  }
+#alexmedia-contact-form .acf-text-field .Mui-focused input{
   color: var(--theme-hover);
 }
 .acf-text-field:hover label {
