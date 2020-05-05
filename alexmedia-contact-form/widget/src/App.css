@@ -18,7 +18,7 @@ a {
 }
 
 :root {
-  --theme: white;
+  --theme: #dd6b49;
   --theme-hover: #02aedc;
   --theme-black: #75d5f0;
   --tablet-breakpoint: 1025px;

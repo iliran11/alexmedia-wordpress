@@ -1,13 +1,28 @@
 {
   "title": "לפרטים צרו קשר ונשמח לעמוד לשירותכם:",
+  "submit-text": "צור קשר",
   "inputs": [
-    { "type": "text", "name": "name", "placeholder": "שם:" },
+    {
+      "type": "text",
+      "name": "name",
+      "placeholder": "*שם:",
+      "errorMessage": "חובה להזין שם",
+      "validation": "required"
+    },
     {
       "type": "numbers",
       "name": "phone",
-      "placeholder": "טלפון:"
+      "placeholder": "*טלפון:",
+      "errorMessage": "חובה להזין  טלפון",
+      "validation": "required"
     },
-    { "type": "text", "name": "mail", "placeholder": "דואל:" },
+    {
+      "type": "text",
+      "name": "mail",
+      "placeholder": "*דואל:",
+      "errorMessage": "חובה להזין מייל",
+      "validation": "required"
+    },
     { "type": "text", "name": "websiteUrl", "placeholder": "כתובת אתר:" },
     { "type": "text", "name": "details", "placeholder": "הערות:" }
   ]

@@ -10,14 +10,14 @@
 }
 .acf-text-field label {
   right: 0px;
-  color: var(--theme);
+  color: white;
   font-size: 18px;
 }
 #alexmedia-contact-form .acf-text-field .Mui-focused {
   right: 0px;
   color: var(--theme-hover);
-  }
-#alexmedia-contact-form .acf-text-field .Mui-focused input{
+}
+#alexmedia-contact-form .acf-text-field .Mui-focused input {
   color: var(--theme-hover);
 }
 .acf-text-field:hover label {
@@ -27,11 +27,11 @@
 
 #alexmedia-contact-form .MuiInputLabel-shrink {
   transform: translate(0, 0);
-  color: var(--theme);
+  color: white;
 }
 
 #alexmedia-contact-form .MuiInputBase-root:after {
-  border-bottom: 1px solid var(--theme);
+  border-bottom: 1px solid white;
 }
 #alexmedia-contact-form .Mui-focused.MuiInputBase-root:after {
   border-bottom: 1px solid var(--theme-hover);
@@ -40,8 +40,12 @@
   border-bottom: 1px solid var(--theme-black);
 }
 #alexmedia-contact-form .MuiInput-underline:not(.Mui-disabled):before {
-  border-bottom: 1px solid var(--theme);
+  border-bottom: 1px solid white;
 }
 #alexmedia-contact-form .MuiInputBase-input {
-  border-bottom: 1px solid var(--theme);
+  border-bottom: 1px solid white;
+}
+/* Error message */
+#alexmedia-contact-form .Mui-error {
+  text-align: right;
 }
