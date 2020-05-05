@@ -16,7 +16,7 @@ function initPlugin()
 
   defined('ABSPATH') or die('Direct script access disallowed.');
   require_once(ACF4_INCLUDES . '/enqueue.php');
-  require_once(ACF4_INCLUDES . '/shortcode.php');
+  // require_once(ACF4_INCLUDES . '/shortcode.php');
 }
 
 add_action('init', 'initPlugin', 20);
