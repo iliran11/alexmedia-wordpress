@@ -23,7 +23,7 @@
 }
 .contact-item {
   font-size: 19px;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
 }
 .contact-item a {
   display: flex;
@@ -58,6 +58,7 @@
   }
   .contact-info .background-image {
     display: block;
+    height: 100%;
   }
   .info {
     margin-right: 25%;
@@ -65,4 +66,7 @@
   .contact-item {
     color: white;
   }
+}
+#trp-floater-ls-current-language {
+  display:none;
 }

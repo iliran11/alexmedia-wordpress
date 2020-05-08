@@ -15,17 +15,22 @@ const ContactForm = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    let shouldRedirect = true;
     const nextFormData = { ...formData };
     Object.keys(nextFormData).forEach((key) => {
       const { validation, value } = nextFormData[key];
       if (!validation) return;
       if (!validation(value)) {
+        shouldRedirect = false;
         nextFormData[key].hasError = true;
       } else {
         nextFormData[key].hasError = false;
       }
     });
     setFormData(nextFormData);
+    if (shouldRedirect) {
+      window.location.assign("https://alexmedia.co.il/תודה");
+    }
   };
   return (
     <form
@@ -34,7 +39,7 @@ const ContactForm = () => {
       autoComplete="off"
       onSubmit={handleSubmit}
     >
-      <h2>{title}</h2>
+      <h2 className="title">{title}</h2>
       <div className="inputs">
         {inputs.map((input) => {
           return (
@@ -47,7 +52,7 @@ const ContactForm = () => {
           );
         })}
       </div>
-      <button>{data["submit-text"]}</button>
+      <button type="submit">{data["submit-text"]}</button>
     </form>
   );
 };
