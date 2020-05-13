@@ -25,14 +25,9 @@ html .ts-bubble-border .ts-title-rotate {
   margin-left: 1rem;
   margin-right: 0px;
 }
-
-@media only screen and (min-width: 768px) {
-  #menu-main-menu {
-    display: flex;
-    /* 	flex-direction: row-reverse; */
-  }
+#alexmedia-testimonals-wrapper-fix {
+  margin-right: 0px !important;
 }
-
 .mainmenu .sub-menu li a,
 .mainmenu .children li a {
   font-family: Open Sans;
@@ -40,10 +35,14 @@ html .ts-bubble-border .ts-title-rotate {
 html body {
   text-align: right;
 }
+
 @media only screen and (min-width: 768px) {
-  .mainmenu .sub-menu li a,
-  .mainmenu .children li a {
-    text-align: right !important;
+  #menu-main-menu {
+    display: flex;
+    /* 	flex-direction: row-reversez; */
+  }
+  #alexmedia-testimonals-wrapper-fix {
+    margin-right: 16.666667% !important;
   }
 }
 .mainmenu .sub-menu li a,
@@ -64,18 +63,6 @@ html body {
   margin-right: 0px;
 }
 
-@media only screen and (min-width: 767px) {
-  .home .odometer-inside {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .home .counter-loop {
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
-  }
-}
-
 .blog-sidebar-content .widget-title:before {
   right: 0;
   left: auto;
@@ -85,36 +72,76 @@ html body {
   left: auto;
 }
 
-.ts-background-image {
-background-size:contain !important;
-	background-position:center !important;
-}
+/* .ts-background-image {
+  background-size: contain !important;
+  background-position: center !important;
+} */
 
 .testimonal-image {
-	background-size:contain;
+  background-size: contain;
 }
 .offset-md-2 {
-	    margin-right: 16.666667% !important;
-
+  margin-right: 16.666667% !important;
 }
-.owl-stage-outer {
-	direction: ltr;
-}
-.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
-	display: block !important;
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
+  display: block !important;
 }
 
 #contact-us-cover h3 {
-	text-align:center;
-	font-size: 50px;
-	font-weight:bold;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
 }
 #contact-us-cover span:first-child {
-	color:var(--dark);
+  color: var(--dark);
 }
 #contact-us-cover span:nth-child(2) {
-	color:var(--yellow);;
+  color: var(--yellow);
 }
 .author-name-info {
   /* color: red !important; */
+}
+.home .ts-background {
+  z-index: 500;
+}
+.home .ts-background-image {
+  background-position-y: 80px !important;
+  background-size: contain !important;
+  background-position-x: -100px !important;
+}
+.home .inique-ts-hero-image div:first-child {
+  z-index: 600;
+}
+
+.home .odometer-inside {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.home .owl-carousel .owl-nav .owl-prev {
+  right: 0.3125rem;
+  left: auto;
+  transform: rotate(180deg);
+}
+.home .owl-carousel .owl-nav .owl-next {
+  left: 0.3125rem;
+  right: auto;
+  transform: rotate(180deg);
+}
+@media only screen and (min-width: 767px) {
+  .home .ts-background-image {
+    background-position-x: 0px !important;
+  }
+  .home .counter-loop {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mainmenu .sub-menu li a,
+  .mainmenu .children li a {
+    text-align: right !important;
+  }
 }
