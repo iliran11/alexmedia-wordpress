@@ -2,7 +2,7 @@
 
 /**
  * @wordpress-plugin
- * Plugin Name: alex-media-change-nav-anchors
+ * Plugin Name: alex-media-client-scripts
  */
 
 function loadChangeMenuAnchor()
