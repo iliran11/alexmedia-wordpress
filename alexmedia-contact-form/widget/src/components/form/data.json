@@ -23,7 +23,11 @@
       "errorMessage": "חובה להזין מייל",
       "validation": "required"
     },
-    { "type": "text", "name": "websiteUrl", "placeholder": "כתובת אתר:" },
-    { "type": "text", "name": "details", "placeholder": "הערות:" }
+    {
+      "type": "text",
+      "name": "websiteUrl",
+      "placeholder": "כתובת אתר:"
+    },
+    { "type": "text", "name": "other", "placeholder": "הערות:" }
   ]
 }

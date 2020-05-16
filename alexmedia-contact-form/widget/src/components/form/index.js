@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TextField from "./components/TextField";
 import getInitialFormModel from "./utils/getInitialFormModel";
+import sendFormData from "../../utils/sendFormData";
 import "./form.css";
 import data from "./data.json";
 
@@ -30,15 +31,11 @@ const ContactForm = () => {
     setFormData(nextFormData);
     if (shouldRedirect) {
       window.location.assign("https://alexmedia.co.il/תודה");
+      sendFormData("form");
     }
   };
   return (
-    <form
-      className="form"
-      noValidate
-      autoComplete="off"
-      onSubmit={handleSubmit}
-    >
+    <form id="form" noValidate autoComplete="off" onSubmit={handleSubmit}>
       <h2 className="title">{title}</h2>
       <div className="inputs">
         {inputs.map((input) => {

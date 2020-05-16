@@ -11,6 +11,7 @@ const TextField = (props) => {
       label={props.placeholder}
       onChange={props.onChange}
       value={props.value}
+      name={props.name}
     />
   );
 };
