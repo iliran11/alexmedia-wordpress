@@ -147,4 +147,17 @@ html body {
   .mainmenu .children li a {
     text-align: right !important;
   }
+  #portfolio-gallery .modula-item-content:hover .figc-inner {
+    display: none;
+  }
+}
+
+#portfolio-gallery .modula-item-content .figc-inner {
+  display: none;
+}
+#portfolio-gallery .modula-item-content:hover .figc-inner {
+  display: none;
+}
+#portfolio-gallery .modula-item-content:hover img {
+  opacity: 0.5;
 }
