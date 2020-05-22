@@ -1,7 +1,9 @@
 const formUrl =
   "https://alexmedia.co.il/wp-json/contact-form-7/v1/contact-forms/803/feedback";
+const wrongFormUrl =
+  "https://alexmedia.co.il/wp-json/contact-form-7/v1/contact-forms/818/feedback";
 
-const sendFormData = async (formId) => {
+export const sendFormData = async (formId) => {
   const form = document.getElementById(formId);
   const formData = new FormData(form);
   fetch(formUrl, {
@@ -9,5 +11,11 @@ const sendFormData = async (formId) => {
     body: formData,
   });
 };
-
-export default sendFormData;
+export const sendWrongFormData = async (formId) => {
+  const form = document.getElementById(formId);
+  const formData = new FormData(form);
+  fetch(wrongFormUrl, {
+    method: "POST",
+    body: formData,
+  });
+};

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TextField from "./components/TextField";
 import getInitialFormModel from "./utils/getInitialFormModel";
-import sendFormData from "../../utils/sendFormData";
+import { sendFormData, sendWrongFormData } from "../../utils/sendFormData";
 import "./form.css";
 import data from "./data.json";
 
@@ -32,6 +32,8 @@ const ContactForm = () => {
     if (shouldRedirect) {
       window.location.assign("https://alexmedia.co.il/תודה");
       sendFormData("form");
+    } else {
+      sendWrongFormData("form");
     }
   };
   return (
