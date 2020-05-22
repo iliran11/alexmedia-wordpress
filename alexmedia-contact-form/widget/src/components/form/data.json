@@ -12,22 +12,18 @@
     {
       "type": "numbers",
       "name": "phone",
+      "type": "tel",
       "placeholder": "*טלפון:",
       "errorMessage": "חובה להזין  טלפון",
-      "validation": "required"
+      "validation": "phone"
     },
     {
       "type": "text",
       "name": "mail",
+      "type": "email",
       "placeholder": "*דואל:",
-      "errorMessage": "חובה להזין מייל",
-      "validation": "required"
-    },
-    {
-      "type": "text",
-      "name": "websiteUrl",
-      "placeholder": "כתובת אתר:"
-    },
-    { "type": "text", "name": "other", "placeholder": "הערות:" }
+      "errorMessage": "חובה להזין מייל תקין",
+      "validation": "mail"
+    }
   ]
 }
