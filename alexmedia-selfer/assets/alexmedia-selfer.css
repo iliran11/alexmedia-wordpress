@@ -150,6 +150,10 @@ html body {
   #portfolio-gallery .modula-item-content:hover .figc-inner {
     display: none;
   }
+  #portfolio-gallery .modula-item-content:hover img {
+    opacity: 0.5;
+    transform: scale(1.3) rotate(-9deg);
+  }
 }
 
 #portfolio-gallery .modula-item-content .figc-inner {
@@ -157,7 +161,4 @@ html body {
 }
 #portfolio-gallery .modula-item-content:hover .figc-inner {
   display: none;
-}
-#portfolio-gallery .modula-item-content:hover img {
-  opacity: 0.5;
 }
