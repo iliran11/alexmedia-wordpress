@@ -118,6 +118,13 @@ if (get_post_meta(get_the_ID(), 'selfer_header_status', true) == 'transparent') 
               ));
             }
             ?>
+
+            <div class="seperator"></div>
+            <div class="social-icons">
+              <i aria-hidden="true" class="fab fa-facebook"></i>
+              <i aria-hidden="true" class="fab fa-facebook"></i>
+              <i aria-hidden="true" class="fab fa-facebook"></i>
+            </div>
           </div>
           <!--end navbar-nav-->
         </div>

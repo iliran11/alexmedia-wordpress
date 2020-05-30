@@ -13,12 +13,6 @@ Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-
 Text Domain: alexmedia-selfer
 */
 
-
-:root {
-  --alex-purple: #160D4C;
-  --alex-white: #FFFFFF;
-}
-
 html {
   direction: rtl;
 }
@@ -62,7 +56,7 @@ html body {
   object-fit: cover;
 }
 .advantage-column-wrapper {
-  width: auto !importat;
+  width: auto !important;
 }
 .home .selfer-about-me-content dd {
   margin: 0 1.5em 1.5em;
