@@ -1,10 +1,26 @@
 #alexmedia-header {
-  background-color: var(--white) !important;
+  background-color: var(--purple) !important;
   font-family: "Heebo", sans-serif;
   font-weight: 500;
-  #alexmedia-header a {
-    color: var(--alex-white);
+  a {
+    color: var(--white);
     font-size: 17px;
+  }
+  .social-icons {
+    display:flex;
+  }
+  .header-social {
+    font-size: 30px;
+    margin-right: 10px;
+    display: inline-block;
+  }
+  .header-social:first-child {
+    margin-right: 31px;
+  }
+  .seperator {
+    width: 2px;
+    height: 30px;
+    background-color: var(--white);
   }
   @media only screen and (min-width: 768px) {
     .menu-item-has-children:after {
