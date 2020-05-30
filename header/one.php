@@ -121,7 +121,7 @@ if (get_post_meta(get_the_ID(), 'selfer_header_status', true) == 'transparent') 
 
             <div class="seperator"></div>
             <div class="social-icons">
-              <div class="header-social">
+              <a class="header-social" id="header-phone-icon" href="tel:050-2229594">
                 <svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <title>16117298-8490-4AAA-BEC2-9551F2C821C6</title>
                   <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -139,8 +139,8 @@ if (get_post_meta(get_the_ID(), 'selfer_header_status', true) == 'transparent') 
                     </g>
                   </g>
                 </svg>
-              </div>
-              <div class="header-social">
+              </a>
+              <a class="header-social" id="header-mail-icon" href="mailto:alex.media4u@gmail.com">
                 <svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <title>7BF58474-DA3B-4BA6-B9B2-F1F4868B8A72</title>
                   <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -161,9 +161,9 @@ if (get_post_meta(get_the_ID(), 'selfer_header_status', true) == 'transparent') 
                     </g>
                   </g>
                 </svg>
-              </div>
-              <div class="header-social">
-                <svg width="34px" height="35px" viewBox="0 0 34 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              </a>
+              <a class="header-social" id="header-facebook-icon" href="https://www.facebook.com/alexmedia4u">
+                <svg width=" 34px" height="35px" viewBox="0 0 34 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <title>19E8E653-DF09-45F6-98FC-CDA0F222ADBC</title>
                   <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="home" transform="translate(-827.000000, -30.000000)">
@@ -183,8 +183,8 @@ if (get_post_meta(get_the_ID(), 'selfer_header_status', true) == 'transparent') 
                     </g>
                   </g>
                 </svg>
-              </div>
-              <div class="header-social">
+              </a>
+              <a class="header-social" id="header-whatsapp-icon" href="https://wa.me/972502229594">
                 <svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <title>1C4D43BB-426F-4081-AB03-2E3F0559B5C3@2x</title>
                   <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -202,13 +202,16 @@ if (get_post_meta(get_the_ID(), 'selfer_header_status', true) == 'transparent') 
                     </g>
                   </g>
                 </svg>
-              </div>
-
             </div>
+
           </div>
-          <!--end navbar-nav-->
         </div>
+        <!--end navbar-nav-->
+        </a>
         <!--end collapse-->
+        <div class="logo">
+          <img src="https://alexmedia.co.il/wp-content/uploads/2020/05/logo-1.png"></img>
+        </div>
       </div>
       <!--end container-->
     </nav>
