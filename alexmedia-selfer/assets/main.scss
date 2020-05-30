@@ -14,11 +14,14 @@ Text Domain: alexmedia-selfer
 */
 
 html {
-  direction: rtl;;
+  direction: rtl;
 }
 html .ts-bubble-border .ts-title-rotate {
   left: auto;
   right: 0;
+}
+.page .ts-social-icons {
+  display: none;
 }
 .site-logo {
   left: 0px;
