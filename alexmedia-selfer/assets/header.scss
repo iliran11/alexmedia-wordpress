@@ -1,7 +1,11 @@
 #alexmedia-header {
-  background-color: var(--purple) !important;
+  background-color: var(--alex-purple) !important;
   font-family: "Heebo", sans-serif;
   font-weight: 500;
+  position: sticky;
+  .admin-bar .fixed-top {
+    top: 0px;
+  }
   .site-logo {
     display: none;
   }
