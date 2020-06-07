@@ -1,15 +1,119 @@
-body.page-id-509 {
-  font-family: "Heebo", sans-serif;
+:root {
+  --alex-white: white;
+  --alex-purple: #160d4c;
+  --alex-pink: #dfcaf0;
+}
 
+body.page-id-509 {
+  color: var(--alex-purple);
+  font-family: "Heebo", sans-serif;
   background-color: white !important;
-  #social-h1 {
-    h1 {
+  color: var(--alex-purple);
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--alex-purple);
+    font-weight: bold;
+    background-color: white;
+  }
+  p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .list-item-icon path {
+    fill: var(--alex-purple) !important;
+  }
+  section {
+    margin: auto;
+  }
+  #social-hero {
+    padding-top: 100px;
+    min-height: calc(100vh - 73px);
+    display: flex;
+    #image-sub-section {
+      flex: auto;
+    }
+    & > div {
+      margin: 0px;
+    }
+    img {
+      height: 450px;
+    }
+    .elementor-column-wrap.elementor-element-populated {
+      padding: 0px;
+    }
+    #hero-buttons {
+      margin-bottom: 31px;
+      display: flex;
+    }
+    a.navigation {
+      text-align: center;
+      font-size: 20px;
+      box-shadow: 4px 4px 2px var(--alex-pink);
+      padding: 10px 40px;
       color: var(--alex-purple);
+      font-weight: bold;
+      border: 1px solid var(--alex-purple);
+      flex: auto;
+      &.invert-button {
+        background-color: var(--alex-purple);
+        color: white;
+      }
+    }
+    #contact-us {
+      margin-right: 15px;
     }
   }
   #social-header-paragraph {
     background-color: white;
     font-size: 20px;
     font-weight: 500;
+    margin-bottom: 0px;
+  }
+  #social-header-right {
+    width: 411px;
+    line-height: 36px !important;
+    .elementor-widget-wrap {
+      flex-direction: column;
+      /* background-color: white; */
+      display: flex;
+      justify-content: center;
+    }
+  }
+  a.navigation {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    flex: auto;
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+  }
+  @media (min-width: 992px) {
+    section {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    section {
+      max-width: 1140px;
+    }
   }
 }
