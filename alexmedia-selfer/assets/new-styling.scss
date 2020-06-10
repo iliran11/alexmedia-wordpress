@@ -18,10 +18,10 @@ body.page-id-509 {
     color: var(--alex-purple);
     font-weight: bold;
     background-color: white;
+    font-size: 20px;
   }
   p {
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 14px;
   }
   .list-item-icon path {
     fill: var(--alex-purple) !important;
@@ -30,7 +30,6 @@ body.page-id-509 {
     margin: auto;
   }
   #hero-buttons {
-    margin-bottom: 31px;
     display: flex;
   }
 
@@ -38,6 +37,8 @@ body.page-id-509 {
     padding-top: 100px;
     min-height: calc(100vh - 73px);
     display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
     & > div {
       margin: 0px;
     }
@@ -46,9 +47,9 @@ body.page-id-509 {
     }
     a.navigation {
       text-align: center;
-      font-size: 20px;
+      font-size: 14px;
       box-shadow: 4px 4px 2px var(--alex-pink);
-      padding: 10px 40px;
+      padding: 5px 20px;
       color: var(--alex-purple);
       font-weight: bold;
       border: 1px solid var(--alex-purple);
@@ -61,6 +62,13 @@ body.page-id-509 {
     #contact-us {
       margin-right: 15px;
     }
+    .elementor-row {
+      flex-wrap: nowrap;
+    }
+  }
+  #social-header-left .elementor-widget-wrap {
+    flex-wrap: nowrap;
+    align-items: center;
   }
   #social-header-paragraph {
     background-color: white;
@@ -100,13 +108,32 @@ body.page-id-509 {
     /* Corrects inability to style clickable `input` types in iOS */
     -webkit-appearance: none;
   }
+  .alexmedia dt {
+    color: var(--alex-purple);
+  }
   @media (min-width: 768px) {
     section {
       max-width: 960px;
     }
     #social-hero-image {
-      width: 200px;
       display: inline;
+    }
+    p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 28px;
+    }
+    a.navigation {
+      font-size: 20;
+      padding: 10px 40px;
+
     }
   }
   @media (min-width: 992px) {
@@ -114,8 +141,10 @@ body.page-id-509 {
       max-width: 960px;
     }
     #social-hero-image {
-      width: 500px;
       display: inline;
+    }
+    #hero-buttons {
+      margin-bottom: 57px;
     }
   }
   @media (min-width: 1200px) {
@@ -125,6 +154,13 @@ body.page-id-509 {
     #social-hero-image {
       width: 900px;
       display: inline;
+    }
+    #social-hero {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    #hero-buttons {
+      margin-bottom: 16px;
     }
   }
 }

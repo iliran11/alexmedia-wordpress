@@ -126,7 +126,9 @@ if (get_post_meta(get_the_ID(), 'selfer_header_status', true) == 'transparent') 
         </div>
         <!--end collapse-->
         <div class="logo">
-          <img src="https://alexmedia.co.il/wp-content/uploads/2020/05/logo-1.png"></img>
+          <a href="https://www.alexmedia.co.il">
+            <img src="https://alexmedia.co.il/wp-content/uploads/2020/05/logo-1.png"></img>
+          </a>
         </div>
       </div>
       <!--end container-->
