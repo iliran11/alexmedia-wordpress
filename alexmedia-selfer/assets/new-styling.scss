@@ -29,25 +29,20 @@ body.page-id-509 {
   section {
     margin: auto;
   }
+  #hero-buttons {
+    margin-bottom: 31px;
+    display: flex;
+  }
+
   #social-hero {
     padding-top: 100px;
     min-height: calc(100vh - 73px);
     display: flex;
-    #image-sub-section {
-      flex: auto;
-    }
     & > div {
       margin: 0px;
     }
-    img {
-      height: 450px;
-    }
     .elementor-column-wrap.elementor-element-populated {
       padding: 0px;
-    }
-    #hero-buttons {
-      margin-bottom: 31px;
-      display: flex;
     }
     a.navigation {
       text-align: center;
@@ -74,7 +69,6 @@ body.page-id-509 {
     margin-bottom: 0px;
   }
   #social-header-right {
-    width: 411px;
     line-height: 36px !important;
     .elementor-widget-wrap {
       flex-direction: column;
@@ -106,14 +100,31 @@ body.page-id-509 {
     /* Corrects inability to style clickable `input` types in iOS */
     -webkit-appearance: none;
   }
+  @media (min-width: 768px) {
+    section {
+      max-width: 960px;
+    }
+    #social-hero-image {
+      width: 200px;
+      display: inline;
+    }
+  }
   @media (min-width: 992px) {
     section {
       max-width: 960px;
+    }
+    #social-hero-image {
+      width: 500px;
+      display: inline;
     }
   }
   @media (min-width: 1200px) {
     section {
       max-width: 1140px;
+    }
+    #social-hero-image {
+      width: 900px;
+      display: inline;
     }
   }
 }
