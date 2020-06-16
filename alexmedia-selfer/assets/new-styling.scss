@@ -4,7 +4,12 @@
   --alex-pink: #dfcaf0;
 }
 
-body.page-id-509 {
+body.page-id-509,
+body.page-id-538,
+body.page-id-524,
+body.page-id-472,
+body.page-id-531
+{
   color: var(--alex-purple);
   font-family: "Heebo", sans-serif;
   background-color: white !important;
@@ -165,6 +170,72 @@ body.page-id-509 {
     }
     #hero-buttons {
       margin-bottom: 0px;
+    }
+  }
+}
+
+body.page-id-509 {
+  @media (min-width: 992px) {
+    #hero-buttons {
+      margin-bottom: 50px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    #hero-buttons {
+      margin-bottom: 0px;
+    }
+  }
+}
+body.page-id-538 {
+  @media (min-width: 992px) {
+    #hero-buttons {
+      margin-bottom: 81px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    #hero-buttons {
+      margin-bottom: 30px;
+    }
+  }
+}
+body.page-id-524 {
+  @media (min-width: 992px) {
+    #hero-buttons {
+      margin-bottom: 93px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    #hero-buttons {
+      margin-bottom: 53px;
+    }
+  }
+}
+body.page-id-472 {
+  @media (min-width: 992px) {
+    #hero-buttons {
+      margin-bottom: 107px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    #hero-buttons {
+      margin-bottom: 93px;
+    }
+  }
+}
+body.page-id-531 {
+  @media (min-width: 992px) {
+    #hero-buttons {
+      margin-bottom: 137px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    #hero-buttons {
+      margin-bottom: 93px;
     }
   }
 }

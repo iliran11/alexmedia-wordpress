@@ -99,7 +99,18 @@ if (get_post_meta(get_the_ID(), 'selfer_header_status', true) == 'transparent') 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="mobile promotion">
+          <div class="socials">
+            <?php include('icons.php'); ?>
+          </div>
+          <div class="logo">
+            <a href="https://www.alexmedia.co.il">
+              <img src="https://alexmedia.co.il/wp-content/uploads/2020/05/logo-1.png"></img>
+            </a>
+          </div>
+        </div>
         <!--end navbar-toggler-->
+        <div class="tablet"></div>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav d-block d-lg-flex ml-auto text-right">
             <?php
@@ -120,12 +131,14 @@ if (get_post_meta(get_the_ID(), 'selfer_header_status', true) == 'transparent') 
             ?>
 
             <div class="seperator"></div>
-            <?php include('icons.php'); ?>
+            <div class="socials desktop">
+              <?php include('icons.php'); ?>
+            </div>
           </div>
           <!--end navbar-nav-->
         </div>
         <!--end collapse-->
-        <div class="logo">
+        <div class="logo desktop">
           <a href="https://www.alexmedia.co.il">
             <img src="https://alexmedia.co.il/wp-content/uploads/2020/05/logo-1.png"></img>
           </a>
