@@ -3,6 +3,16 @@
   font-family: "Heebo", sans-serif;
   font-weight: 500;
   position: sticky;
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  .menu-click i {
+    color: rgba(255, 255, 255, 0.45) !important;
+  }
+  .menu-item-with-icon path {
+    fill: white;
+  }
+
   nav {
     padding-right: 0px;
   }
@@ -54,8 +64,12 @@
     width: 100px;
     margin-right: 10px;
   }
-
-  @media only screen and (min-width: 768px) {
+  @media only screen and (max-width: 767px) {
+    [class*="navbar-expand"] .navbar-nav .mainmenu li a {
+      border-top: 0.0625rem solid rgba(255, 255, 255, 0.3);
+    }
+  }
+  @media (min-width: 960px) {
     .header-social {
       max-width: 35px;
       svg {
@@ -64,16 +78,13 @@
       }
       margin-right: 10px;
     }
-    .logo.desktop {
-      margin-right: 10px;
-      width: auto;
-    }
     .mobile {
       display: none;
     }
     .desktop {
       display: block;
     }
+
     .menu-item-has-children:after {
       top: 27px;
     }
