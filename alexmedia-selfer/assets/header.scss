@@ -34,7 +34,7 @@
     display: flex;
   }
   .header-social:first-child {
-    margin-right: 31px;
+    margin-right: 0px;
   }
   .header-social {
     max-width: 35px;
@@ -64,9 +64,17 @@
     width: 100px;
     margin-right: 10px;
   }
+  .mainmenu > li {
+    white-space: nowrap;
+  }
   @media only screen and (max-width: 767px) {
     [class*="navbar-expand"] .navbar-nav .mainmenu li a {
       border-top: 0.0625rem solid rgba(255, 255, 255, 0.3);
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 1041px;
     }
   }
   @media (min-width: 960px) {
@@ -91,6 +99,9 @@
     .header-social {
       margin-right: 10px;
       white-space: nowrap;
+    }
+    .header-social:first-child {
+      margin-right: 31px;
     }
   }
 }
