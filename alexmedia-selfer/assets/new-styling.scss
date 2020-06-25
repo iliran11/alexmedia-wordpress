@@ -1,5 +1,5 @@
 :root {
-  --alex-white: white;
+  --alex-white: #f8f9fd;
   --alex-purple: #160d4c;
   --alex-pink: #dfcaf0;
 }
@@ -11,8 +11,11 @@ body.page-id-472,
 body.page-id-531 {
   color: var(--alex-purple);
   font-family: "Heebo", sans-serif;
-  background-color: white !important;
+  background-color: var(--alex-white) !important;
   color: var(--alex-purple);
+  .ts-page-wrapper {
+    overflow: unset;
+  }
   h1,
   h2,
   h3,
@@ -21,7 +24,7 @@ body.page-id-531 {
   h6 {
     color: var(--alex-purple);
     font-weight: bold;
-    background-color: white;
+    background-color: var(--alex-white);
     font-size: 20px;
   }
   p {
@@ -41,12 +44,15 @@ body.page-id-531 {
   }
 
   #service-hero {
+    display: flex;
+    justify-content: center;
+    max-width: 99999px;
     padding-top: 50px;
     min-height: calc(100vh - 73px);
     display: flex;
     padding-left: 10px;
     padding-right: 10px;
-    max-width: none;
+    background-position: right;
     & > div {
       margin: 0px;
     }
@@ -91,7 +97,7 @@ body.page-id-531 {
       justify-content: center;
     }
     p {
-      background-color: white;
+      background-color: var(--alex-white);
       font-weight: 500;
       margin-bottom: 0px;
     }
@@ -126,7 +132,8 @@ body.page-id-531 {
     display: none;
   }
   @media (min-width: 768px) {
-    section {
+    section,
+    #service-hero-inner {
       max-width: 960px;
     }
     #service-header-left {
@@ -173,7 +180,8 @@ body.page-id-531 {
     }
   }
   @media (min-width: 1200px) {
-    section {
+    section,
+    #service-hero-inner {
       max-width: 1140px;
     }
     #service-header-left {
