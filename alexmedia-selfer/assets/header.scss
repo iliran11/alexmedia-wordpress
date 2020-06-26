@@ -1,8 +1,8 @@
-
 #alexmedia-header {
   background-color: var(--alex-purple) !important;
   font-family: "Heebo", sans-serif;
   font-weight: 500;
+  overflow: hidden;
   position: sticky;
   top: 0;
   .navbar-toggler-icon {
@@ -11,13 +11,13 @@
   .menu-click i {
     color: rgba(255, 255, 255, 0.45) !important;
   }
-  .menu-item-with-icon path {
-    fill: white;
+  .menu-item-with-icon {
+    display: block;
+    path {
+      fill: white;
+    }
   }
 
-  nav {
-    padding-right: 0px;
-  }
   .container {
     padding-right: 0px;
   }
@@ -79,7 +79,7 @@
       max-width: 1041px;
     }
   }
-  @media (min-width: 960px) {
+  @media (min-width: 992px) {
     .header-social {
       max-width: 35px;
       svg {
