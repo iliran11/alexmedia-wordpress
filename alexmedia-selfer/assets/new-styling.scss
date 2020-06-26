@@ -47,7 +47,7 @@ body.page-id-531 {
     display: flex;
     justify-content: center;
     max-width: 99999px;
-    padding-top: 50px;
+    padding-top: 25px;
     min-height: calc(100vh - 73px);
     display: flex;
     padding-left: 10px;
@@ -150,10 +150,6 @@ body.page-id-531 {
     }
     #service-header-left {
       width: 425px;
-      .elementor-widget-wrap {
-        flex-wrap: nowrap;
-        align-items: center;
-      }
     }
     #service-header-right {
       max-width: 350px;
