@@ -3,7 +3,9 @@
   --alex-purple: #160d4c;
   --alex-pink: #dfcaf0;
 }
-
+#wpadminbar {
+  display: none;
+}
 body.page-id-509,
 body.page-id-538,
 body.page-id-524,
@@ -130,6 +132,8 @@ body.page-id-531 {
   #social-hero-image-mobile {
     // max-width: 300px;
     margin-top: 25px;
+    // fix safari bug with images
+    align-self: flex-start;
   }
   #social-hero-image {
     display: none;
