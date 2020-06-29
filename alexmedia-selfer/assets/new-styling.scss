@@ -10,7 +10,8 @@ body.page-id-509,
 body.page-id-538,
 body.page-id-524,
 body.page-id-472,
-body.page-id-531 {
+body.page-id-531,
+body.page-id-1060 {
   color: var(--alex-purple);
   font-family: "Heebo", sans-serif;
   background-color: var(--alex-white) !important;
@@ -285,6 +286,25 @@ body.page-id-531 {
   @media (min-width: 1200px) {
     #hero-buttons {
       margin-bottom: 93px;
+    }
+  }
+}
+body.page-id-1060 {
+  @media (min-width: 992px) {
+    #hero-buttons {
+      margin-bottom: 137px;
+    }
+    #social-hero-image {
+      margin-top: 37px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    #hero-buttons {
+      margin-bottom: 156px;
+    }
+    #social-hero-image {
+      margin-top: 0px;
     }
   }
 }
