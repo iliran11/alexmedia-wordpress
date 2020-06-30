@@ -27,7 +27,7 @@ body.page-id-1060 {
   h6 {
     color: var(--alex-purple);
     font-weight: bold;
-    background-color: var(--alex-white);
+    // background-color: var(--alex-white);
     font-size: 28px;
   }
   p {
@@ -46,12 +46,14 @@ body.page-id-1060 {
       max-width: 200px;
     }
   }
-
+  .full-width: {
+    max-width: 99999px;
+  }
   #service-hero {
     display: flex;
     justify-content: center;
-    max-width: 99999px;
     padding-top: 50px;
+    max-width: 99999px;
     min-height: calc(100vh - 73px);
     display: flex;
     background-position: right;
@@ -290,6 +292,24 @@ body.page-id-531 {
   }
 }
 body.page-id-1060 {
+  background-color: white !important;
+  #service-hero {
+    background-color: #ffecf1;
+    background-position: bottom;
+    background-size: cover;
+  }
+  #contact-us {
+    background-color: var(--alex-white);
+  }
+  .home-service-header {
+    display: flex;
+  }
+  .service-wrap {
+    p {
+      font-size: 18px;
+    }
+  }
+
   @media (min-width: 992px) {
     #hero-buttons {
       margin-bottom: 137px;
