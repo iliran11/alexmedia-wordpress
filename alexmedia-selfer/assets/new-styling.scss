@@ -3,11 +3,12 @@
   --alex-purple: #160d4c;
   --alex-pink: #dfcaf0;
   --alex-purple-light: #1e145f;
+  --alex-cyan: #88b9ee;
 }
-#wpadminbar {
-  display: none;
+html[dir="rtl"] {
+  background-color: #f8f9fd !important;
+  margin-top: 0px !important;
 }
-
 body.rtl {
   color: var(--alex-purple);
   font-family: "Heebo", sans-serif;
@@ -16,6 +17,10 @@ body.rtl {
   .ts-page-wrapper {
     overflow: unset;
   }
+  .alex-no-wrap .elementor-widget-wrap {
+    flex-wrap: nowrap;
+  }
+
   h1,
   h2,
   h3,
@@ -28,6 +33,7 @@ body.rtl {
     // background-color: var(--alex-white);
     font-size: 28px;
   }
+
   p {
     font-size: 20px;
   }
@@ -36,6 +42,20 @@ body.rtl {
   }
   section {
     margin: auto;
+  }
+  a.navigation {
+    text-align: center;
+    box-shadow: 4px 4px 2px var(--alex-pink);
+    font-size: 14px;
+    padding: 10px;
+    color: var(--alex-purple);
+    font-weight: bold;
+    border: 1px solid var(--alex-purple);
+    flex: auto;
+    &.invert-button {
+      background-color: var(--alex-purple);
+      color: white;
+    }
   }
   #hero-buttons {
     display: flex;
@@ -55,27 +75,13 @@ body.rtl {
     min-height: calc(100vh - 73px);
     display: flex;
     background-position: right;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
     & > div {
       margin: 0px;
     }
     .elementor-column-wrap.elementor-element-populated {
       padding: 0px;
-    }
-    a.navigation {
-      text-align: center;
-      box-shadow: 4px 4px 2px var(--alex-pink);
-      font-size: 14px;
-      padding: 10px;
-      color: var(--alex-purple);
-      font-weight: bold;
-      border: 1px solid var(--alex-purple);
-      flex: auto;
-      &.invert-button {
-        background-color: var(--alex-purple);
-        color: white;
-      }
     }
     #contact-us {
       margin-right: 15px;
@@ -111,7 +117,7 @@ body.rtl {
   .blog-page-content:not(.blog-single-page) .more-link:hover {
     background-color: transparent;
     text-decoration: underline !important;
-    color: #f438ff;
+    color: var(--alex-cyan);
   }
   .blog-sidebar-content .widget-title:before,
   .blog-sidebar-content .widget-title:after {
@@ -123,7 +129,7 @@ body.rtl {
   a:hover,
   a:focus,
   a:active {
-    color: var(--alex-purple-light);
+    color: var(--alex-cyan);
   }
   .logged-in-as {
     a {
@@ -174,27 +180,27 @@ body.rtl {
     }
   }
   a.navigation {
-    border: none;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    overflow: visible;
-    flex: auto;
-    background: transparent;
+    // border: none;
+    // // margin: 0;
+    // // padding: 0;
+    // // width: auto;
+    // // overflow: visible;
+    // flex: auto;
+    // // background: transparent;
 
-    /* inherit font & color from ancestor */
-    color: inherit;
-    font: inherit;
+    // /* inherit font & color from ancestor */
+    // // color: inherit;
+    // // font: inherit;
 
-    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
-    line-height: normal;
+    // /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    // line-height: normal;
 
-    /* Corrects font smoothing for webkit */
-    -webkit-font-smoothing: inherit;
-    -moz-osx-font-smoothing: inherit;
+    // /* Corrects font smoothing for webkit */
+    // -webkit-font-smoothing: inherit;
+    // -moz-osx-font-smoothing: inherit;
 
-    /* Corrects inability to style clickable `input` types in iOS */
-    -webkit-appearance: none;
+    // /* Corrects inability to style clickable `input` types in iOS */
+    // -webkit-appearance: none;
   }
   .alexmedia dt {
     color: var(--alex-purple);
@@ -260,9 +266,8 @@ body.rtl {
     h4,
     h5,
     h6 {
-      font-size: 28px;
     }
-    #service-hero a.navigation {
+    a.navigation {
       font-size: 18px;
       padding: 10px 40px;
     }
@@ -379,6 +384,11 @@ body.page-id-1060 {
   #contact-us {
     background-color: var(--alex-white);
   }
+  #contact-us:focus,
+  #contact-us:active {
+    background-color: var(--alex-cyan);
+    color: white;
+  }
   .home-service-header {
     display: flex;
   }
@@ -405,4 +415,22 @@ body.page-id-1060 {
       margin-top: 0px;
     }
   }
+}
+body.page-id-1278 {
+  #navbar {
+    display: none;
+  }
+}
+#wpadminbar {
+  display: none;
+}
+body
+  > div.elementor.elementor-1201.elementor-location-footer
+  > div
+  > div
+  > section
+  > div.elementor-shape.elementor-shape-top
+  > svg
+  > path {
+  display: none;
 }
