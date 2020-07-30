@@ -98,8 +98,8 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base
     <dl class="alexmedia icons-list">
       <?php foreach ($settings['list'] as $item) : ?>
         <div class="item">
+          <?php \Elementor\Icons_Manager::render_icon($settings['list_icon'], ['aria-hidden' => 'true']); ?>
           <div class="list-item-icon">
-            <?php \Elementor\Icons_Manager::render_icon($settings['list_icon'], ['aria-hidden' => 'true']); ?>
           </div>
           <div class="content">
             <dt><?php echo $item['list_item_title'] ?></dd>

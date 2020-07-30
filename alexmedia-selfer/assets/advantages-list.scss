@@ -1,0 +1,11 @@
+  body .alexmedia .list-item-icon {
+    align-self: center; 
+  }
+@media only screen and (min-width: 1025px) {
+  body .alexmedia .item {
+    align-self: start; 
+  }
+  body .alexmedia .list-item-icon {
+    align-self: start; 
+  }
+}
